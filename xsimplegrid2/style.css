@@ -1,20 +1,18 @@
 /* CSS Document */
 /*
-xSimplegrid2 Template
+xSimplegrid XOOPS Template
 Author:				Brutalicuss
 DEMO URL:			http://eunion.info/xoops/xsimplegrid
-Licence:			GPL
+Licence:			MIT
 */
 @-webkit-viewport   {width: device-width;}
 @-moz-viewport      {width: device-width;}
 @-ms-viewport       {width: device-width;}
 @-o-viewport        {width: device-width;}
 @viewport           {width: device-width;}
-*:focus {  
-outline: none;
-}
-a:link {text-decoration:none;color:#545050;outline:none;}
-a:hover {color:#00D4FF;outline:none;}
+*:focus {outline: none;}
+a:link, a:visited {text-decoration:none;color:#545050;outline:none;}
+a:hover, a:active {color:#00D4FF;outline:none;}
 body {background-color:#E1E1E1;font-family: 'Open Sans', sans-serif;line-height: 1.5;font-style: normal;font-weight: normal;color: #545050;width: 100%;height: 100%;}
 .bodyback {background:#F3F3F3;}
 .bigcontent {background:#F7F7F7;padding:5px;padding-top:20px;}
@@ -42,7 +40,7 @@ body {background-color:#E1E1E1;font-family: 'Open Sans', sans-serif;line-height:
 .footercontent {padding-top:15px;text-align:center;color:#000;}
 .footercontent a:link{color:#F7F7F7;}
 .footercontent a:hover{color:#00D4FF;}
-.fmenuicon{margin-left:450px;margin-top:-30px;}
+.fmenuicon{position:absolute;}
 /* Top and Middle sliders */
 .topslider {margin-top:80px;border-bottom:1px solid #F6EEBF;}
 .middleslider {padding-right:20px;padding-left:20px;}
@@ -53,7 +51,7 @@ body {background-color:#E1E1E1;font-family: 'Open Sans', sans-serif;line-height:
 .custombanner {margin-bottom:-20px;}
 .fastmenu {float:left;margin-top:22px;}
 .fi{font-size: 28px;line-height: 32px;}
-.fixx {display:none;}/* fix to not display icon's shadow on page refresh */
+.fixx {display:none;}
 .pop_li{font-size: 12px;}
 .fa-bars{color: #F7F7F7;font-size: 32px;margin-left:15px;}
 .back-to-top {position: fixed;bottom: 2em;right: -1px;text-decoration: none;color: #F7F7F7;font-size: 42px;padding: 12px;display: none;}
@@ -63,7 +61,7 @@ body {background-color:#E1E1E1;font-family: 'Open Sans', sans-serif;line-height:
 #loading-image {position: relative;top:350px;z-index: 100;}
 .searchbtn {background:#F7F7F7;padding:2px;margin-left:3px;border:1px solid #333;border-radius:3px;}
 .searchbtn:hover {background:#33FF33;}
-iframe {max-width:98%;}
+iframe, img {max-width:100%;}
 #com_text {max-width:80%;}
 /* Media */
 @media (max-width: 479px) {
@@ -71,15 +69,15 @@ iframe {max-width:98%;}
 .m479-2 {margin-left:-19px;width:115%;padding:-10px;}
 .m479-2 img{max-width:80%;}
 .xoops_contents {width:110%;}
-.xfooter {height:80px;}
-#demo-switcher {margin-bottom:80px;}
-#demo-switcher-search {margin-bottom:80px;}
 .fnone {display:none;}
 }
 @media (max-width: 767px) {
 .mhide {display:none;}
 img {max-width:95%;}
 .outer {font-size:10px;}
+.xfooter {height:80px;}
+#demo-switcher {margin-bottom:80px;}
+#demo-switcher-search {margin-bottom:80px;}
 }
 @media (max-width: 991px) {
 #loading-image {top:50px;}
@@ -92,17 +90,17 @@ img {max-width:95%;}
 .buttonsearch {color:#ccc;}
 .sicon {color:#333;}
 .outer {max-width:95%;font-size:12px;}
+.xfooter {position:relative;}
+body {overflow-x:hidden;}
 }
 @media (max-width: 1199px) {
 #loading-image {top:200px;}
 .dnone2 {display:none;}
 .mobilecontent {width:80%;}
+.xheader {position:relative;}
+.topslider {margin-top:0px;}
+.mobilecontent {position:absolute;margin-left:80px;width:80%;}
 }
 @media (max-width: 1359px) {
-.xfooter {position:relative;}
 .back-to-top {bottom: 3em;}
-}
-@media (max-width: 1679px) {
-.topslider {margin-top:0px;}
-.xheader {position:relative;}
 }
